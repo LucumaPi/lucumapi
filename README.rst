@@ -3,7 +3,7 @@ Lucuma Pi
 
 A Lucuma Pi repository.
 
-* Webpage:
+* Webpage: https://lucumapi.github.io
 * Documentation:
 * Code:
 * License: GPL v2
