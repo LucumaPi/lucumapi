@@ -6,10 +6,9 @@ verify_ssl = true
 [dev-packages]
 docutils = "*"
 doc8 = "*"
-sphinx-intl = "*"
+recommonmark = "*"
 transifex-client = "*"
 sphinx-rtd-theme = "*"
-recommonmark = "*"
 
 [packages]
 sphinx = "*"
@@ -17,6 +16,8 @@ sphinx-autobuild = "*"
 sphinxcontrib-katex = "*"
 sphinxcontrib-bibtex = "*"
 sphinx-math-dollar = "*"
+sphinx-intl = "*"
+amunra-sphinx-theme = "*"
 
 [requires]
 python_version = "3.7"
