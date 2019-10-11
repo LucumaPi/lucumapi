@@ -18,6 +18,7 @@ sphinxcontrib-bibtex = "*"
 sphinx-math-dollar = "*"
 sphinx-intl = "*"
 amunra-sphinx-theme = "*"
+ghp-import = "*"
 
 [requires]
 python_version = "3.7"
