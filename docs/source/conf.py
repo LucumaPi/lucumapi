@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Lucuma Pi'
-copyright = u'2019, Lucuma Pi Develop Team'
-author = u'Lucuma Pi Develop Team'
+copyright = u'2019, Lucuma Pi Development Team'
+author = u'Lucuma Pi Development Team'
 
 # The short X.Y version
-version = u''
+version = u'1.0'
 # The full version, including alpha/beta/rc tags
-release = u'1.0'
+release = u''
 
 
 # -- General configuration ---------------------------------------------------
@@ -47,6 +47,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'recommonmark',
+    'sphinxcontrib.bibtex',
+    'sphinxcontrib.katex',
+    'sphinx_math_dollar'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -55,8 +59,8 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
+# source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
@@ -74,26 +78,44 @@ language = u'es'
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
-
+pygments_style = 'sphinx'
+highlight_language = 'csharp'
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'amunra_sphinx_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    # Title shown in the top left. (Default: ``project`` value.)
+    "navbar_title": "Amunra",
+
+    # Links to shown in the top bar. (Default: top-level ``toctree`` entries.)
+    "navbar_links": [
+        ("Inicio rápido", "quickstart"),
+        ("Tutoriales", "tutorials/index"),
+        ("API", "api/index"),
+        ("Acerca de", "about/index"),
+    ],
+
+    # If ``github_link`` is set, a GitHub icon will be shown in the top right.
+    "github_link": "https://github.com/LucumaPi",
+
+    # Text to show in the footer of every page.
+    "footer_text": "Creado con ♥ por Lucuma Pi Development Team."
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_logo = '_static/lucumapilogo.jpg'
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -117,11 +139,11 @@ htmlhelp_basename = 'LucumaPidoc'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'a4paper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    # 'pointsize': '10pt',
+    'pointsize': '11pt',
 
     # Additional stuff for the LaTeX preamble.
     #
@@ -137,7 +159,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'LucumaPi.tex', u'Lucuma Pi Documentation',
-     u'Lucuma Pi Develop Team', 'manual'),
+     u'Lucuma Pi Development Team', 'manual'),
 ]
 
 
