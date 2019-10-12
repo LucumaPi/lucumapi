@@ -12,7 +12,9 @@ install:
     - pip install -r requirements.txt
 
 script:
-  - cd docs && ghp-import public/html -b gh-pages
+  - cd docs
+  - make html
+  - ghp-import public/html -b gh-pages
 
 deploy:
     provider: pages
