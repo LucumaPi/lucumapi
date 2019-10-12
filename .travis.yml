@@ -20,6 +20,6 @@ deploy:
     provider: pages
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
-    local_dir: public/html
+    local_dir: build/html
     on:
       branch: master
