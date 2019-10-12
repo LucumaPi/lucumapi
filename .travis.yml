@@ -14,7 +14,7 @@ install:
 script:
   - cd docs
   - make html
-  - ghp-import build/public/html -b gh-pages
+  - ghp-import build/html -b gh-pages
 
 deploy:
     provider: pages
