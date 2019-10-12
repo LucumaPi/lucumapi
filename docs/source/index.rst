@@ -61,6 +61,7 @@ Proporcionar horas de disfrute.
            * Fedora
            * Ubuntu
 
+
 There are lots of great options for 
 where to start,  
 and :doc:`/Options/justlogic` is a great 
@@ -98,9 +99,12 @@ but give your link text some title.
 
    about
 
+
 .. bibliography:: test.bib
    :style: alpha
    :all:
+
+See :cite:`jeff2012` y :cite:`Douglas:1976`
 
 .. math::
     :label: potential

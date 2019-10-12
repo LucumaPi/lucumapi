@@ -1,0 +1,24 @@
+dist: bionic
+sudo: required
+language: python
+python:
+  - '3.7'
+cache: pip
+branches:
+  only:
+    - master
+
+install:
+    - pip install -r requirements.txt
+
+script:
+  - pelican content
+  - ghp-import output -b gh-pages
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    local_dir: public/html
+    on:
+      branch: master
