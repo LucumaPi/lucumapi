@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>lightkurve Jupyter Notebook Tutorials &#8212; documentación de Lucuma Pi - </title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/katex-math.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js"></script>
+    <script type="text/javascript" src="../_static/katex_autorenderer.js"></script>
+    <link rel="author" title="Sobre este documento" href="../about.html" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <!-- Load Bootstrap CSS and Javascript (Javascript is needed for the navbar toggle) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Load the theme's CSS. -->
+    <link rel="stylesheet" href="../_static/css/amunra.css" type="text/css" />
+
+    
+
+  </head><body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Lucuma Pi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+
+    
+      <!-- Custom navbar -->
+      <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="../quickstart.html">Inicio rápido</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="index.html">Tutoriales</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="../api/index.html">API</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="../about/index.html">Acerca de</a>
+          </li>
+      </ul>
+    
+
+        <form class="form-inline my-2 my-md-0 ml-auto" action="../search.html" method="get">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search" name="q" />
+        </form>
+
+        <!-- GitHub icon -->
+        
+          <a href="https://github.com/LucumaPi">
+            <svg class="github-icon" viewBox="0 0 16 16" version="1.1" height="22" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="container">
+    
+  <div class="section" id="lightkurve-jupyter-notebook-tutorials">
+<h1><code class="docutils literal notranslate"><span class="pre">lightkurve</span></code> Jupyter Notebook Tutorials<a class="headerlink" href="#lightkurve-jupyter-notebook-tutorials" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="table-of-contents">
+<h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>:tv: <em>denotes a narrated screencast is available on the <a class="reference external" href="https://www.youtube.com/channel/UCJx_ls4mg5ms9q4Mv_2mYqg">Kepler/K2 Guest Observer Office YouTube Channel</a>.</em></p>
+<div class="section" id="introduction-to-lightkurve">
+<h3>Introduction to lightkurve<a class="headerlink" href="#introduction-to-lightkurve" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="01-target-pixel-files.ipynb">What are TargetPixelFile objects?</a>  <a class="reference external" href="https://youtu.be/ebw4diF-2NY">:tv:</a></p></li>
+<li><p><a class="reference external" href="01-what-are-lightcurves.ipynb">What are LightCurve objects?</a>  <a class="reference external" href="https://youtu.be/xBesCFlkjIw">:tv:</a></p></li>
+<li><p><a class="reference external" href="01-lightcurve-files.ipynb">What are LightCurveFile objects?</a>  <a class="reference external" href="https://youtu.be/rh7kSNlsqGM">:tv:</a></p></li>
+<li><p><a class="reference external" href="01-using-the-periodogram-class.ipynb">What is the Periodogram class?</a> <a class="reference external" href="https://youtu.be/dYk2gjZGK7k">:tv:</a></p></li>
+</ul>
+</div>
+<div class="section" id="science-with-lightkurve">
+<h3>Science with lightkurve<a class="headerlink" href="#science-with-lightkurve" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="02-recover-a-planet.ipynb">How to recover a known planet in Kepler data?</a></p></li>
+<li><p><a class="reference external" href="02-how-to-recover-the-first-tess-candidate.ipynb">How to recover the first TESS planet candidate with Lightkurve?</a></p></li>
+<li><p><a class="reference external" href="02-how-to-use-lightkurve-for-asteroseismology.ipynb">How to use lightkurve for asteroseismology</a></p></li>
+<li><p><a class="reference external" href="02-how-to-make-a-supernova-lightcurve.ipynb">How to make a supernova lightcurve?</a></p></li>
+</ul>
+</div>
+<div class="section" id="extracting-lightcurves">
+<h3>Extracting lightcurves<a class="headerlink" href="#extracting-lightcurves" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="03-making-custom-apertures.ipynb">How to perform aperture photometry with custom apertures?</a></p></li>
+<li><p><a class="reference external" href="03-how-to-use-prf-photometry.ipynb">How to perform PRF photometry?</a></p></li>
+<li><p><a class="reference external" href="03-cutting-out-tpfs-from-tess-ffis.ipynb">How to cut out Target Pixel Files from Kepler Superstamps or TESS FFIs?</a></p></li>
+<li><p><a class="reference external" href="03-making-fits-files.ipynb">How to save a LightCurve in FITS format?</a></p></li>
+<li><p><a class="reference external" href="03-appending-lightcurves.ipynb">How to combine lightcurves from different Kepler quarters</a></p></li>
+</ul>
+</div>
+<div class="section" id="systematics-correction">
+<h3>Systematics correction<a class="headerlink" href="#systematics-correction" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="04-interact-with-lightcurves-and-tpf.ipynb">Interactively inspecting Target Pixel Files and Lightcurves</a> <a class="reference external" href="https://youtu.be/89_sz-oG4VI">:tv:</a></p></li>
+<li><p><a class="reference external" href="04-removing-cbvs.ipynb">How to remove common systematics using basis vectors (CBVs)</a></p></li>
+<li><p><a class="reference external" href="04-how-to-detrend.ipynb">How to remove K2 motion systematics with SFF?</a></p></li>
+<li><p><a class="reference external" href="04-replicate-vanderburg-2014-k2sff.ipynb">How does the SFF method work?</a> <a class="reference external" href="https://youtu.be/3Vs9uWW-E84">:tv:</a></p></li>
+<li><p><a class="reference external" href="04-replicate-vanderburg-2014-lightkurve.ipynb">Replicating Vanderburg &amp; Johnson 2014 using lightkurve</a>  <a class="reference external" href="https://youtu.be/kYRqZwz2VPU">:tv:</a></p></li>
+<li><p><a class="reference external" href="04-identify-rolling-band.ipynb">How to identify time-variable background noise (“rolling bands”)?</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="container footer">
+    <hr>
+    <p class="text-center">
+      
+        Creado con ♥ por Lucuma Pi Development Team.
+      
+    </p>
+</div>
+  </body>
+</html>

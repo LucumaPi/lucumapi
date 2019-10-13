@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>API &#8212; documentación de Lucuma Pi - </title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/katex-math.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js"></script>
+    <script type="text/javascript" src="../_static/katex_autorenderer.js"></script>
+    <link rel="author" title="Sobre este documento" href="../about.html" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <!-- Load Bootstrap CSS and Javascript (Javascript is needed for the navbar toggle) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Load the theme's CSS. -->
+    <link rel="stylesheet" href="../_static/css/amunra.css" type="text/css" />
+
+    
+
+  </head><body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Lucuma Pi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+
+    
+      <!-- Custom navbar -->
+      <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="../quickstart.html">Inicio rápido</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="../tutorials/index.html">Tutoriales</a>
+          </li>
+          
+          <li class="nav-item active">
+          
+            <a class="nav-link" href="#">API</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="../about/index.html">Acerca de</a>
+          </li>
+      </ul>
+    
+
+        <form class="form-inline my-2 my-md-0 ml-auto" action="../search.html" method="get">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search" name="q" />
+        </form>
+
+        <!-- GitHub icon -->
+        
+          <a href="https://github.com/LucumaPi">
+            <svg class="github-icon" viewBox="0 0 16 16" version="1.1" height="22" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="container">
+    
+  <div class="section" id="api">
+<span id="id1"></span><h1>API<a class="headerlink" href="#api" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>This page provides an overview of the Python functions and classes provided by the Lightkurve package.</p>
+<p>Programmers tend to refer to a list like this as the API (<em>Application Programming Interface</em>).</p>
+<div class="section" id="light-curve-objects">
+<h2>Light curve objects<a class="headerlink" href="#light-curve-objects" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>The <a class="reference internal" href="lightcurve.html#module-lightkurve.lightcurve" title="lightkurve.lightcurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.lightcurve</span></code></a> module provides classes which represent time-series brightness (flux) data.
+The generic <code class="xref py py-class docutils literal notranslate"><span class="pre">LightCurve</span></code> class can be used to work with any «time vs flux» data set and provides access to a range of common operations, e.g.
+<cite>~lightkurve.lightcurve.LightCurve.bin()</cite>,
+<cite>~lightkurve.lightcurve.LightCurve.flatten()</cite>,
+<cite>~lightkurve.lightcurve.LightCurve.fold()</cite>,
+and <cite>~lightkurve.lightcurve.LightCurve.plot()</cite>.
+There are specific sub-classes for light curves observed by the Kepler and TESS missions, which extend the generic class by adding mission-specific metadata.</p>
+</div>
+<div class="section" id="searching-and-downloading-data">
+<h2>Searching and downloading data<a class="headerlink" href="#searching-and-downloading-data" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>The <a class="reference internal" href="search.html#module-lightkurve.search" title="lightkurve.search"><code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.search</span></code></a> module provides functions which make it easy to load and search data files produced by the Kepler and TESS missions.</p>
+</div>
+<div class="section" id="data-product-objects">
+<h2>Data product objects<a class="headerlink" href="#data-product-objects" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Lightkurve provides classes to interact with the files that are generated by NASA’s Kepler and TESS data processing pipelines and made available at the <a class="reference external" href="https://archive.stsci.edu/">data archive</a>.
+The <a class="reference internal" href="lightcurvefile.html#module-lightkurve.lightcurvefile" title="lightkurve.lightcurvefile"><code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.lightcurvefile</span></code></a> module provides classes which represent FITS files that store one or more light curves.
+These classes provide methods to read in  <code class="xref py py-class docutils literal notranslate"><span class="pre">LightCurve</span></code> objects and access various metadata.</p>
+<p>The <a class="reference internal" href="targetpixelfile.html#module-lightkurve.targetpixelfile" title="lightkurve.targetpixelfile"><code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.targetpixelfile</span></code></a> module provides classes which represent FITS files that store the original pixel data (images) obtained by the Kepler or TESS telescopes.
+These classes provide methods to visualize these data and extract custom light curves.</p>
+</div>
+<div class="section" id="correcting-systematics">
+<h2>Correcting systematics<a class="headerlink" href="#correcting-systematics" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Telescope data is always affected by systematic noise contributed by the detector. The <a class="reference internal" href="correctors.html#module-lightkurve.correctors" title="lightkurve.correctors"><code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.correctors</span></code></a> sub-package provides classes which offer different strategies to remove such noise:</p>
+</div>
+<div class="section" id="finding-periodic-signals">
+<h2>Finding periodic signals<a class="headerlink" href="#finding-periodic-signals" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>The <a class="reference internal" href="periodogram.html#module-lightkurve.periodogram" title="lightkurve.periodogram"><code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.periodogram</span></code></a> module provides classes to help find periodic signals in light curves.</p>
+</div>
+<div class="section" id="asteroseismology">
+<h2>Asteroseismology<a class="headerlink" href="#asteroseismology" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.seismology</span></code> sub-package provides tools to extra quick-look astroseismic parameters (numax, deltanu, radius, mass, and logg) from periodograms.</p>
+</div>
+<div class="section" id="utilities">
+<h2>Utilities<a class="headerlink" href="#utilities" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>The <a class="reference internal" href="utils.html#module-lightkurve.utils" title="lightkurve.utils"><code class="xref py py-class docutils literal notranslate"><span class="pre">lightkurve.utils</span></code></a> module provides a range of common helper functions and classes.</p>
+</div>
+<div class="section" id="can-t-find-what-you-re-looking-for">
+<h2>Can’t find what you’re looking for?<a class="headerlink" href="#can-t-find-what-you-re-looking-for" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>If you are looking for a specific class or function not listed here, try consulting the API index or search pages:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index of all classes and methods</span></a></p></li>
+<li><p><a class="reference internal" href="../py-modindex.html"><span class="std std-ref">Index of all modules</span></a></p></li>
+<li><p><a class="reference internal" href="../search.html"><span class="std std-ref">Search page</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+</div>
+<div class="container footer">
+    <hr>
+    <p class="text-center">
+      
+        Creado con ♥ por Lucuma Pi Development Team.
+      
+    </p>
+</div>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lucuma Pi &#8212; documentación de Lucuma Pi - </title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/katex-math.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js"></script>
+    <script type="text/javascript" src="_static/katex_autorenderer.js"></script>
+    <link rel="author" title="Sobre este documento" href="about.html" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Just Logic" href="Options/justlogic.html" />
+    <!-- Load Bootstrap CSS and Javascript (Javascript is needed for the navbar toggle) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Load the theme's CSS. -->
+    <link rel="stylesheet" href="_static/css/amunra.css" type="text/css" />
+
+    
+
+  </head><body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="#">Lucuma Pi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+
+    
+      <!-- Custom navbar -->
+      <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="quickstart.html">Inicio rápido</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="tutorials/index.html">Tutoriales</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="api/index.html">API</a>
+          </li>
+          
+          <li class="nav-item">
+          
+            <a class="nav-link" href="about/index.html">Acerca de</a>
+          </li>
+      </ul>
+    
+
+        <form class="form-inline my-2 my-md-0 ml-auto" action="search.html" method="get">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search" name="q" />
+        </form>
+
+        <!-- GitHub icon -->
+        
+          <a href="https://github.com/LucumaPi">
+            <svg class="github-icon" viewBox="0 0 16 16" version="1.1" height="22" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="container">
+    
+  <div class="section" id="bienvenido-a-a-la-documentacion-de-lucuma-pi">
+<h1>¡Bienvenido(a) a la documentación de Lucuma Pi!<a class="headerlink" href="#bienvenido-a-a-la-documentacion-de-lucuma-pi" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Codificar con niños puede ser un <em>excelente</em>
+manera de no solo enseñarles algunas habilidades
+eso los ayudará con sus
+vidas propias, pero también <em>crear o
+fortalecer</em> algo duradero
+<strong>vínculos entre usted y ellos</strong> <span class="math">\(\partial V\)</span>.</p>
+<p>A lo largo de tu viaje lo harás
+ambos probablemente aprendan nuevos <code class="docutils literal notranslate"><span class="pre">conceptos</span></code> y
+<code class="docutils literal notranslate"><span class="pre">términos</span></code> que ampliarán sus horizontes y
+Proporcionar horas de disfrute.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Some kids have problems with screen time
+and if you leave them unattended with a
+screen and they have access to things
+like YouTube or games, they may not stay
+focused on the task at hand.</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Prudencia</p>
+<p>Some kids have problems with screen time
+and if you leave them unattended with a
+screen and they have access to things
+like YouTube or games, they may not stay
+focused on the task at hand.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Peligro</p>
+<p>Some kids have problems with screen time
+and if you leave them unattended with a
+screen and they have access to things
+like YouTube or games, they may not stay
+focused on the task at hand.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Some kids have problems with screen time
+and if you leave them unattended with a
+screen and they have access to things
+like YouTube or games, they may not stay
+focused on the task at hand.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Placas de circuitos integrados</dt><dd><ul>
+<li><dl class="simple">
+<dt>ARM</dt><dd><ul>
+<li><p>Raspberry Pi 4</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Distribuciones Linux</dt><dd><ul>
+<li><dl class="simple">
+<dt>Rolling release</dt><dd><ul>
+<li><p>Deepin</p></li>
+<li><p>CentOS Stream</p></li>
+<li><p>Manjaro</p></li>
+<li><p>Arch Linux</p></li>
+<li><p>OpenSUSE Tumbleweed</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Non-rolling release</dt><dd><ul>
+<li><p>Fedora</p></li>
+<li><p>Ubuntu</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<p>There are lots of great options for
+where to start,
+and <a class="reference internal" href="Options/justlogic.html"><span class="doc">Just Logic</span></a> is a great
+place to start. Note that
+the <a class="reference internal" href="Options/justlogic.html"><span class="doc">best starting point</span></a> is
+another way to refer to the same place
+but give your link text some title.</p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<p id="bibtex-bibliography-index-0"><dl class="citation">
+<dt class="bibtex label" id="jeff2012"><span class="brackets"><a class="fn-backref" href="#id1">Bid12</a></span></dt>
+<dd><p>Jeff Biddle. Retrospectives: the introduction of the cobb-douglas regression. <em>Journal of Economic Perspectives</em>, 26(2):223–36, May 2012. URL: <a class="reference external" href="http://www.aeaweb.org/articles?id=10.1257/jep.26.2.223">http://www.aeaweb.org/articles?id=10.1257/jep.26.2.223</a>, <a class="reference external" href="https://doi.org/10.1257/jep.26.2.223">doi:10.1257/jep.26.2.223</a>.</p>
+</dd>
+<dt class="bibtex label" id="douglas-1976"><span class="brackets"><a class="fn-backref" href="#id2">Dou76</a></span></dt>
+<dd><p>Paul H. Douglas. The cobb-douglas production function once again: its history, its testing, and some new empirical values. <em>Journal of Political Economy</em>, 84(5):903–915, 1976. URL: <a class="reference external" href="https://doi.org/10.1086/260489">https://doi.org/10.1086/260489</a>, <a class="reference external" href="https://arxiv.org/abs/https://doi.org/10.1086/260489">arXiv:https://doi.org/10.1086/260489</a>, <a class="reference external" href="https://doi.org/10.1086/260489">doi:10.1086/260489</a>.</p>
+</dd>
+</dl>
+</p>
+<p>See <a class="bibtex reference internal" href="#jeff2012" id="id1">[Bid12]</a> y <a class="bibtex reference internal" href="#douglas-1976" id="id2">[Dou76]</a></p>
+<div class="math" id="equation-potential">
+<span class="eqno">(1)<a class="headerlink" href="#equation-potential" title="Enlace permanente a esta ecuación">¶</a></span>\[\Delta V = -\int\vec{E}\cdot \mathrm{d}\vec{\ell}\]</div>
+<div class="math" id="equation-parabola">
+<span class="eqno">(2)<a class="headerlink" href="#equation-parabola" title="Enlace permanente a esta ecuación">¶</a></span>\[y^2 = 2px + (e^2 - 1)x^2\]</div>
+<div class="math" id="equation-blackscholes">
+<span class="eqno">(3)<a class="headerlink" href="#equation-blackscholes" title="Enlace permanente a esta ecuación">¶</a></span>\[\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2S^2 + rS\frac{\partial V}{\partial S} - rV = 0\]</div>
+<div class="math" id="equation-fem">
+<span class="eqno">(4)<a class="headerlink" href="#equation-fem" title="Enlace permanente a esta ecuación">¶</a></span>\[\forall v\in {H}^{1}_{0},-\phi(u,v)=\int fv\]</div>
+<p>Hola, ¿cómo están? <span class="math">\(f(n) = 0 \text{ if $n$ is prime}\)</span>.</p>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Enlazar permanentemente con este título">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Índice</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Índice de Módulos</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Página de Búsqueda</span></a></p></li>
+</ul>
+<div class="lead docutils container">
+<p>Lucuma Pi</p>
+<p>A short description of your project.</p>
+<a href="quickstart.html" class="btn btn-primary">Quickstart →</a></div>
+</div>
+
+
+</div>
+<div class="container footer">
+    <hr>
+    <p class="text-center">
+      
+        Creado con ♥ por Lucuma Pi Development Team.
+      
+    </p>
+</div>
+  </body>
+</html>
